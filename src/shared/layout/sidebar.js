@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Sidebar = () => {
     const Navigate=useNavigate()
-    return (
+    return (<>
         <div className={styles.sidebar_wrapper}>
             <TbRoute onClick={()=>{
                 Navigate('/')
@@ -26,6 +26,7 @@ const Sidebar = () => {
          <FaArrowRight className={styles.back_arrow}/>
          </div>   
         </div>
+        </>
     );
 }
 

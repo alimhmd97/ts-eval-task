@@ -1,9 +1,21 @@
 import React from 'react';
+import { Header } from './header';
+import { WarningSec } from './warning-sec';
+import { NextStepsCard } from './next-steps-card';
+import { ImgCard } from './img-card';
+import { Slider } from './slider';
 
 const FirstPage = () => {
     return (
         <div>
-FirstPage
+            <Header />
+             <WarningSec />
+            <div className="flex flex-col md:flex-row gap-4">
+                <ImgCard />
+                <NextStepsCard />
+            </div>
+            <Slider/>
+           
         </div>
     );
 }

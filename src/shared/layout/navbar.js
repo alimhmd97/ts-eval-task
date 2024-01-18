@@ -10,15 +10,21 @@ import { IoIosLogOut } from "react-icons/io";
 
 
 const Navbar = () => {
-    return (
-        <div className={styles.navbar_wrapper}>
-            <div className={styles.nav_logo_wrapper}>
+    return (<>
+        <nav className={` max-md:flex-col md:items-center ${styles.navbar_wrapper}`}>
+            <div className={`${styles.nav_logo_wrapper} justify-between gap-10`}>
 
                 <img alt='' src='https://cdn.builder.io/api/v1/image/assets/TEMP/3833ad54abbe71b5e1e165734558950c7b02e0292a0f4592d0ce6d1b5e3ee6da?apiKey=854b1295ef754afa80d463882b8719fe&'/>
+           
+                <div className={`${styles.navbar_item} !flex md:!hidden`} >
+                <HiOutlineDesktopComputer />
+               <span className={styles.nav_text}> All courses</span>
+                </div>
             </div>
-            {/*  */}
-            <div className={styles.navbar_items_wrapper}>
-                <div className={styles.navbar_item} style={{marginRight:'auto'}}>
+           
+            <div className={ ` max-md:flex-col justify-start md:items-center ${styles.navbar_items_wrapper}`}>
+               <div className={styles.navbar_items_wrapper}>
+               <div className={`${styles.navbar_item} !hidden md:!flex`} style={{ marginRight: 'auto' }}>
                 <HiOutlineDesktopComputer />
                <span className={styles.nav_text}> All courses</span>
                 </div>
@@ -34,6 +40,8 @@ const Navbar = () => {
                 <RiAlarmWarningLine />
                 <span className={styles.nav_text}> Notifications</span>
                 </div>
+                </div>
+<div className={styles.navbar_items_wrapper}>
                 <div className={styles.navbar_item}>
                 <MdOutlineHeadsetMic />
                 <span className={styles.nav_text}> Support</span>
@@ -50,10 +58,12 @@ const Navbar = () => {
                 <IoIosLogOut />
                 <span className={styles.nav_text}> Log out</span>
                 </div>
+                </div>
                
             </div>
 
-        </div>
+        </nav>
+        </>
     );
 }
 

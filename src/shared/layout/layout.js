@@ -4,13 +4,13 @@ import { Sidebar } from './sidebar';
 
 const Layout = ({ children }) => {
     return (
-        <div className={styles.layout_wrapper}>
+        <main className={styles.layout_wrapper}>
             <Navbar />
             <Sidebar />
-           <div style={{padding:'1rem'}}>
+           <div style={{padding:'1rem 2rem 1rem 1rem ',maxWidth:'calc(100% - 4rem)'}} className='flex-1'>
            {children}
            </div> 
-        </div>
+        </main>
     );
 }
 
