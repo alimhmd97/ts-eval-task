@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Snackbar } from '../../../shared/UI/snackbar';
+import { Snackbar } from '../../../shared/snackbar/snackbar';
 import { SliderCards } from './slider-cards';
 import { Spinner } from '../../../shared/spinner/spinner';
 

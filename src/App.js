@@ -1,16 +1,14 @@
 import "./App.css";
-import Navigation from "./components/navigation/navigation";
-import { Snackbar } from "./shared/UI/snackbar";
+import Navigation from "./shared/navigation/navigation";
+import { Snackbar } from "./shared/snackbar/snackbar";
 import { Layout } from "./shared/layout/layout";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 
 function App() {
-  const [snackbarMsg, setSnackbarMsg] = useState('');
+  const [snackbarMsg, setSnackbarMsg] = useState('Welcome, Explore joyfully, stay delighted!');
 
-  useEffect(() => {
-    setSnackbarMsg('Welcome, Explore joyfully, stay delighted!')
-  }, []);
+
   return (
     <Layout>
     {snackbarMsg&&<Snackbar message={snackbarMsg} handleClose={ setSnackbarMsg } classes={'bg-warning !text-dark'}/>}

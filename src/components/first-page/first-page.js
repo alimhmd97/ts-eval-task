@@ -7,7 +7,7 @@ import { Slider } from './slider/slider';
 
 const FirstPage = () => {
     return (
-        <div className="p-4 pr-8 pb-4 pl-4 max-md:pt-6">
+        <div className="p-4 pr-8 pb-4 pl-4 ">
             <Header />
              <WarningSec />
             <div className="flex flex-col md:flex-row gap-4">

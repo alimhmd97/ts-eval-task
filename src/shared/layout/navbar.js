@@ -12,7 +12,7 @@ import { IoIosLogOut } from "react-icons/io";
 const Navbar = ({renderNavbar}) => {
     return (<>
         <nav className={`relative max-md:flex-col md:items-center 
-        ${renderNavbar?'':"max-md:!absolute max-md:!top-0 max-md:opacity-0 max-md:invisible max-md:transition-opacity"} ${styles.navbar_wrapper}`}>
+        ${renderNavbar?'':"max-md:!absolute max-md:!top-0 max-md:opacity-0 max-md:invisible "} ${styles.navbar_wrapper} `}>
             <div className={`${styles.nav_logo_wrapper} justify-between gap-10`}>
 
                 <img style={{ height: '3rem' }} alt='' 

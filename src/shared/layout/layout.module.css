@@ -26,7 +26,7 @@
 .back_arrow_wrapper {
     background: black;
     position: absolute;
-    left: 3.2rem;
+    right: -14px;
     top: 1.2rem;
     padding: 5px;
     border-radius: 50%;

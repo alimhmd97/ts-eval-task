@@ -14,7 +14,7 @@ const ThirdPage = () => {
         }
     }, []);
     return (
-        <div className='bg-[#EAF3F4] p-4 pr-8 pb-4 pl-4 max-md:pt-6'>
+        <div className='bg-[#EAF3F4] p-4 pr-8 pb-4 pl-4 '>
             <RocketBooster updateProgress={updateProgress} />
             <Progressbar currentProgress={currentProgress} progressbarElemnts={progressbarElements} />
         </div>
