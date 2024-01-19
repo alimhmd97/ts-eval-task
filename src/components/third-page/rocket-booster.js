@@ -2,21 +2,21 @@ import React from 'react';
 
 const RocketBooster = ({updateProgress}) => {
     return (
-        <div className="items-stretch bg-slate-100 flex flex-col pl-5 pr-10 py-5 max-md:pr-5">
-        <div className="justify-center items-center flex flex-col px-16 max-md:max-w-full max-md:px-5">
+        <div className="items-stretch bg-slate-100 flex flex-col max-md:pt-3">
+        <div className="justify-center items-center flex flex-col  max-md:max-w-full ">
           <span className="flex w-[860px] max-w-full flex-col items-stretch">
             <span className="justify-between items-stretch flex gap-5 max-md:max-w-full max-md:flex-wrap">
-              <div className="text-zinc-800 text-4xl font-semibold tracking-tighter grow shrink basis-auto">
+              <div className="text-zinc-800 text-4xl max-lg:text-zinc-600 max-lg:text-2xl font-semibold tracking-tighter grow shrink basis-auto">
                 RocketBooster:
               </div>
-              <div className="text-zinc-800 text-2xl font-semibold leading-7 tracking-tight self-start">
+              <div className="text-zinc-800 text-2xl max-lg:text-zinc-600 max-lg:text-2xl font-semibold leading-7 tracking-tight self-start">
                 4/7
               </div>
             </span>
-            <div className="text-zinc-800 text-3xl font-semibold tracking-tighter mt-8 max-md:max-w-full">
+            <div className="text-zinc-800 text-3xl max-lg:text-zinc-600 max-lg:text-2xl font-semibold tracking-tighter mt-8 max-md:max-w-full">
               Credibility
             </div>
-            <div className="text-zinc-800 text-xl font-bold leading-7 tracking-tight mt-8 max-md:max-w-full">
+            <div className="text-zinc-800 text-xl max-lg:text-zinc-400 max-lg:text-lg font-bold leading-7 tracking-tight mt-8 max-md:max-w-full">
               Do you strategically scout your existing network for opportunities
               to connect with your audience's connections?This question is
               required.*
@@ -35,7 +35,7 @@ const RocketBooster = ({updateProgress}) => {
                 No
               </label>
             </span>{" "}
-            <div className="justify-between items-stretch flex w-full gap-5 mt-10 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
+            <div className="mb-16 justify-between items-stretch flex w-full gap-5 mt-10 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
               <span  onClick={()=>{
                     updateProgress('backward')
                 }} className="justify-between items-stretch border border-[color:var(--Brand-Colours-Navy-blue-200,#273249)] flex gap-2.5 px-6 py-3.5 rounded-[70px] border-solid max-md:px-5">

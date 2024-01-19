@@ -9,7 +9,9 @@ const Progressbar = ({ progressbarElemnts, currentProgress }) => {
 
                 {
                     progressbarElemnts?.map((el, i) => {
-                        return <ProgressbarElement currentProgress={currentProgress} arrayLength={progressbarElemnts?.length} key={i} element={el} index={i} />
+                        return <ProgressbarElement key={i}
+                         currentProgress={currentProgress} arrayLength={progressbarElemnts?.length} 
+                          element={el} index={i} />
                     })
                 }
                 <div className=" h-[5px]  w-full  flex">
@@ -22,7 +24,9 @@ const Progressbar = ({ progressbarElemnts, currentProgress }) => {
                     })}
                 </div>
             </div>
-            <div className="inline-block max-md:w-full ">{(currentProgress / progressbarElemnts?.length * 100).toFixed(0)}% completed</div>
+            <div className="inline-block max-md:w-full ">
+                {(currentProgress / progressbarElemnts?.length * 100).toFixed(0)}
+                % completed</div>
         </div>
     );
 }

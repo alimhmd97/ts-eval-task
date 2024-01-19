@@ -1,8 +1,8 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, memo } from 'react';
 import {  Route, Routes } from 'react-router-dom';
-import { Loader } from '../loader/loader';
+import { Loader } from '../../shared/loader/loader';
 
-const Navigation = () => {
+const Navigation = memo((props) => {
     const FirstPage = React.lazy(() => import('../first-page/first-page'))
     const SecondPage = React.lazy(() => import('../second-page/second-page'))
     const ThirdPage = React.lazy(() => import('../third-page/third-page'))
@@ -14,6 +14,6 @@ const Navigation = () => {
         <Route path={'/third-page'} element={<Suspense fallback={<Loader />}> <ThirdPage /></Suspense>} />
         </Routes>
     );
-}
+})
 
 export default Navigation;

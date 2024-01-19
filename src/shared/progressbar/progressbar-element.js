@@ -5,10 +5,10 @@ const ProgressbarElement = ({ index, element, arrayLength, currentProgress }) =>
     return (
         <div className={`${styles.progressbar_element_wrapper}
         flex-wrap
-          ${index > currentProgress - 1 ? 'max-md:!bg-[#BEC1C8]' : 'max-md:!bg-dark'} max-md:!left-0 max-md:!bottom-0 mb-2`}
+          ${index > currentProgress - 1 ? 'max-lg:!bg-[#BEC1C8]' : 'max-lg:!bg-dark'} max-lg:!left-0 max-lg:!bottom-0 mb-2`}
             style={{ width: `${100 / arrayLength}%`, fontSize: '.75rem',minWidth:'5rem' }}>
-            <div className={`${styles.progressbar_element} max-md:!static
-             max-md:!text-light  `}
+            <div className={`${styles.progressbar_element} max-lg:!static
+             max-lg:!text-light  `}
                 style={{
                     textAlign: 'center',
                     left: index === 0 ? '40%' :
@@ -18,7 +18,7 @@ const ProgressbarElement = ({ index, element, arrayLength, currentProgress }) =>
                 {element}
                 <div className={`${styles.black_dot}
                  ${index > currentProgress - 1 ? 'bg-[#BEC1C8]' :
-                        'bg-dark'} max-md:!hidden `}></div>
+                        'bg-dark'} max-lg:!hidden `}></div>
             </div>
         </div>
     );

@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     flex-direction:column ;
-    bottom: -250%;
+    bottom: -580%;
     left: 50%;
     transform: translate(-50%);
 }
