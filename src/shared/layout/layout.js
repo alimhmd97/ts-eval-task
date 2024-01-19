@@ -24,10 +24,10 @@ const toggleSidebar=()=>{
 
             <div className='relative w-full '>
             <Navbar renderNavbar={renderNavbar}/>
-            <div className={`md:!hidden flex w-full mt-5 left-1/2 felx justify-center items-center`}
+            <div className={`md:!hidden flex w-full mt-3 left-1/2 felx justify-center items-center`}
              style={{bottom:'-1.5rem'}}>
-                <div className="w-10" onClick={toggleNavbar}>
-                    <img alt='' src='/assets/menu.png' />
+                <div className="w-6" onClick={toggleNavbar}>
+                    <img alt='' src='/ts-eval-task/assets/menu.png' />
                 </div>
 
             </div>

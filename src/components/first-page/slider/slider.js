@@ -95,7 +95,7 @@ const Slider = () => {
           <img
             alt=''
             loading="lazy"
-            src='/assets/back-arrow.png'
+            src='/ts-eval-task/assets/back-arrow.png'
             // src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c7058113b83c0e184e9c948056970a75651d8ab4f90500f5b1bf2ddd97ef6f3?apiKey=854b1295ef754afa80d463882b8719fe&"
             className="aspect-square object-contain object-center w-3 justify-center items-center overflow-hidden"
           />
