@@ -12,7 +12,7 @@ const Sidebar = ({ toggleSidebar, isSidebarOpened }) => {
 
 
     return (<>
-        <div className={` ${isSidebarOpened ? 'md:w-[15vw] md:min-w-32 ' : 'max-md:!w-0'} relative`}>
+        <div className={` ${isSidebarOpened ? 'md:w-[15vw] md:min-w-32 ' : ''} relative`}>
             {!isSidebarOpened && <span className='text-light md:hidden'>.</span>}
             <div onClick={() => {
                 toggleSidebar()
@@ -20,7 +20,7 @@ const Sidebar = ({ toggleSidebar, isSidebarOpened }) => {
                                <FaArrowRight className={styles.back_arrow} />
             </div>
 
-            <div className={`${styles.sidebar_wrapper} ${isSidebarOpened ? '!w-[100%] md:min-w-32 ' : 'max-md:!w-0'} `}>
+            <div className={`${styles.sidebar_wrapper} ${isSidebarOpened ? '!w-[100%] md:min-w-32 ' : 'max-md:!hidden'} `}>
                 <div onClick={() => {
                         Navigate('/')
                     }} className='flex  w-full px-3 items-center'>
