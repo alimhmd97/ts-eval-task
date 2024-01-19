@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Snackbar } from '../../../shared/UI/snackbar';
 import { SliderCards } from './slider-cards';
+import { Spinner } from '../../../shared/spinner/spinner';
 
 const Slider = () => {
   const sliderRef = useRef(null);
@@ -113,10 +114,9 @@ const Slider = () => {
 
     </div>
     <div className='w-full overflow-hidden'>
-    {!isloading ? <SliderCards posts={posts} ref={sliderRef} settings={settings} />:
-    <div class="spinner-container">
-  <div class="spinner"></div>
-</div>}
+    {!isloading ? <SliderCards posts={posts} ref={sliderRef} settings={settings} />
+    :
+  <Spinner/>}
     </div>
   </>
   );

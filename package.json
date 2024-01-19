@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "ts-eval-task",
   "version": "0.1.0",
-  "homepage": "https://alimhmd97.github.io/TS-eval-task",
+  "homepage": "https://alimhmd97.github.io/ts-eval-task",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
