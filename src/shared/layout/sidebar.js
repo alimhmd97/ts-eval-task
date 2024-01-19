@@ -21,24 +21,24 @@ const Sidebar = ({ toggleSidebar, isSidebarOpened }) => {
             </div>
 
             <div className={`${styles.sidebar_wrapper} ${isSidebarOpened ? '!w-[100%] md:min-w-32 ' : 'max-md:!w-0'} `}>
-                <div className='flex  w-full px-3 items-center'>
-                  
-                    <TbRoute onClick={() => {
+                <div onClick={() => {
                         Navigate('/')
-                    }} className={`${styles.icon_styles} ${isSidebarOpened?'md:mr-4':''}`} />
+                    }} className='flex  w-full px-3 items-center'>
+                  
+                    <TbRoute  className={`${styles.icon_styles} ${isSidebarOpened?'md:mr-4':''}`} />
                       <span className={`${isSidebarOpened?"":"hidden"} max-md:text-xs max-md:hidden`}>Home</span>
                     </div>
-                <div className='flex  w-full px-3 items-center'>
-                    <IoBookOutline onClick={() => {
+                <div onClick={() => {
                         Navigate('/second-page')
-                    }}
+                    }} className='flex  w-full px-3 items-center'>
+                    <IoBookOutline 
                         className={`${styles.icon_styles} ${isSidebarOpened?'md:mr-4':''}`} />
                           <span className={`${isSidebarOpened?"":"hidden"} max-md:text-xs max-md:hidden`}>Test</span>
                           </div>
-                <div className='flex  w-full px-3 items-center'>
-                    <HiOutlineSquares2X2 onClick={() => {
+                <div  onClick={() => {
                         Navigate('/third-page')
-                    }} className={`${styles.icon_styles} ${isSidebarOpened?'md:mr-4':''}`} />
+                    }} className='flex  w-full px-3 items-center'>
+                    <HiOutlineSquares2X2 className={`${styles.icon_styles} ${isSidebarOpened?'md:mr-4':''}`} />
                       <span className={`${isSidebarOpened?"":"hidden"} max-md:text-xs max-md:hidden`}> Booster</span>
                       </div>
 
