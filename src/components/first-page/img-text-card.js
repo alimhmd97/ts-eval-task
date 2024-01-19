@@ -13,7 +13,7 @@ const ImgTextCard = () => {
         Learn how to leverage your social media following to create a community
         and increase your reach.
       </div>
-      <div className="text-slate-800 text-center text-sm font-semibold leading-4 tracking-tight justify-center items-stretch border border-[color:var(--Brand-Colours-Navy-blue-200,#273249)] mt-2 px-3 py-2.5 rounded-[70px] border-solid">
+      <div className="cursor-pointer text-slate-800 text-center text-sm font-semibold leading-4 tracking-tight justify-center items-stretch border border-[color:var(--Brand-Colours-Navy-blue-200,#273249)] mt-2 px-3 py-2.5 rounded-[70px] border-solid">
         Learn more
       </div>
     </div>

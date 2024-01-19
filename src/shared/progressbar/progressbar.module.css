@@ -1,0 +1,25 @@
+.progressbar_element_wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 1rem;
+    left: 1rem;
+}
+.progressbar_element{
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+    bottom: -250%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.black_dot{
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}

@@ -3,6 +3,9 @@
 
 body {
   margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  max-width: 100vw;
   font-family: Montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,4 +14,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+div::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+div::-webkit-scrollbar,
+body::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+div::-webkit-scrollbar-thumb
+,body::-webkit-scrollbar-thumb
+{
+	background-color: #3F4141;
 }
