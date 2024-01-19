@@ -34,7 +34,7 @@ const toggleSidebar=()=>{
             </div>
             
             <Sidebar toggleSidebar={toggleSidebar} isSidebarOpened={isSidebarOpened}/>
-           <div style={{width:isSidebarOpened?'calc(100% -  30vw)':'calc(100% - 4rem)'}} className={`transition-all duration-300 ease-in-out flex-1 ${isSidebarOpened?'!w-[calc(100% - (4rem - 30vw))]':'!w-[calc(100% - 4rem)]'}`}>
+           <div style={{width:isSidebarOpened?'calc(100% - 30vw)':'calc(100% - 5rem)'}} className={` flex-1`}>
            {children}
            </div> 
         </main>
